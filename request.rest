@@ -1,0 +1,20 @@
+GET http://localhost:3000/check_user
+Authorization: Info eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2FydmFyIiwiaWF0IjoxNjA3OTExMjYzLCJleHAiOjE2MDc5MTEzMjN9.bPjtuLiu0cz-GfcxW14q6Qs9t5OfK_mYUciYS9HwOEM
+
+###
+
+POST http://localhost:3000/refresh_token
+Content-Type: application/json
+
+{
+    "token":"$2b$10$R/JRnsP7WJCEEofL5508LuqUXgOohOIrsr/.f/u0xhoTEfcypYHAK"
+}
+
+###
+
+POST http://localhost:3000/get_access_refresh_token
+Content-Type: application/json
+
+{
+    "username":"Sarvar"
+}
